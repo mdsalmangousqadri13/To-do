@@ -1,0 +1,180 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  min-height: 100vh;
+  color: #fff;
+}
+
+/* Heading */
+h1 {
+  font-size: 2.3rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Form Section */
+form {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 550px;
+  color: #333;
+}
+
+form div {
+  display: flex;
+  gap: 0.7rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Input */
+#inputValue {
+  flex: 1;
+  padding: 0.8rem 1rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+#inputValue:focus {
+  border-color: #764ba2;
+  box-shadow: 0 0 0 3px rgba(118, 75, 162, 0.25);
+}
+
+/* Primary Button */
+.btn {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.4rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Todo List Section */
+.todo-lists-elem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.todo-lists-elem div {
+  background: #f9fafb;
+  padding: 0.9rem 1rem;
+  border-radius: 12px;
+  border: 1px solid #eee;
+  font-size: 1rem;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.todo-lists-elem div:hover {
+  background: #eef2ff;
+  border-color: #c7d2fe;
+}
+
+/* Buttons inside Todo */
+.todo-lists-elem .actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.todo-lists-elem button {
+  border: none;
+  padding: 0.4rem 0.7rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: 0.2s ease;
+}
+
+/* Edit button */
+.edit-btn {
+  background: #4caf50; /* Green */
+  color: #fff;
+}
+.edit-btn:hover {
+  background: #388e3c;
+}
+
+/* Delete button */
+.delete-btn {
+  background: #e53935; /* Red */
+  color: #fff;
+}
+.delete-btn:hover {
+  background: #b71c1c;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+  form {
+    padding: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+  h1 {
+    font-size: 1.6rem;
+  }
+  form div {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.4rem;
+  }
+  #inputValue {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+  .btn {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+  .todo-lists-elem div {
+    font-size: 0.9rem;
+    padding: 0.7rem;
+  }
+}
