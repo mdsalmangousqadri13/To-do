@@ -22,6 +22,8 @@ const addTodoDynamicElement = (curElem) => {
 
 
 
+
+
 const addTodoList = (e) => {
     e.preventDefault();
     const todoListValue = inputValue.value.trim();
